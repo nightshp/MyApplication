@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="112.0dip"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_load_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="标题"
+        android:layout_marginLeft="16.0dip"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:layout_below="@id/tv_load_title"
+        android:layout_marginTop="4.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_width="600dip"
+        android:layout_height="4dip">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tv_load_progress"
+            android:layout_width="1.0dip"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_dark" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_load_state"
+        android:layout_width="wrap_content"
+        android:layout_height="48.0dip"
+        android:paddingTop="12.0dip"
+        android:paddingBottom="12.0dip"
+        android:paddingLeft="14.0dip"
+        android:paddingRight="14.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24.0dip"
+        android:text="点击下载"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"/>
+
+
+</RelativeLayout>

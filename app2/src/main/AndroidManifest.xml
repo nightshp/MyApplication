@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lunzn.demo">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name=".ViewFlipperActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name=".activity.ListViewActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.LooperActivity">
+
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+
+        <service android:name=".LessonService"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="com.example.lesson" />
+
+                <data android:scheme="http"/>
+            </intent-filter>
+
+        </service>
+
+        <receiver android:name=".broadcast.LessonReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="com.example.lesson.11"/>
+
+                <action android:name="com.example.lesson.22"/>
+            </intent-filter>
+
+        </receiver>
+
+        <receiver android:name=".broadcast.SecondReceiver">
+            <intent-filter android:priority="800">
+                <action android:name="com.example.lesson.11"/>
+
+                <action android:name="com.example.lesson.22"/>
+            </intent-filter>intent-filter
+        </receiver>
+
+
+    </application>
+
+</manifest>

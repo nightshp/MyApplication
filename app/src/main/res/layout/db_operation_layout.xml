@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_db_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新增数据"/>
+
+    <Button
+        android:id="@+id/btn_db_del"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除数据"/>
+
+    <Button
+        android:id="@+id/btn_db_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改数据"/>
+
+    <Button
+        android:id="@+id/btn_db_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查找数据"/>
+
+    <Button
+        android:id="@+id/btn_db_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询总数"/>
+
+    <TextView
+        android:id="@+id/tv_db_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        />
+
+
+
+</LinearLayout>
