@@ -31,9 +31,9 @@ public class VideoActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.vedio_view_layout);
+        setContentView(R.layout.video_controller_layout);
         initView();
-        videoPlay("111.avi");
+        videoPlay("test.mp4");
     }
 
     private void initView() {
