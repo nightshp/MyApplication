@@ -4,6 +4,8 @@
     package="lunzn.com.transmit">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:name="org.litepal.LitePalApplication"
@@ -19,7 +21,10 @@
         <activity android:name=".activity.Activity1" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
             <activity android:name=".MainActivity"/>
             <activity android:name=".activity.VolleyActivity1" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-            <activity android:name=".activity.LitePalActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <activity android:name=".activity.LitePalActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            <activity android:name=".activity.VideoActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            <activity android:name=".activity.MediaPlayerActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            <activity android:name=".activity.VideoViewActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
