@@ -73,10 +73,11 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
      * 注册操作
      */
     private void register() {
-        String name = etUserName.getText().toString();
-        String passwd = etPasswd.getText().toString();
+        // 获取输入框名字和密码并去除空格
+        String name = etUserName.getText().toString().trim();
+        String passwd = etPasswd.getText().toString().trim();
         Log.i(TAG,"加密前的密码:"+passwd);
-        String confPasswd = etConfPasswd.getText().toString();
+        String confPasswd = etConfPasswd.getText().toString().trim();
         // 名字和密码不为空
         if (name != null && name.length() != 0 && passwd != null && passwd.length() != 0){
             // 判断两次密码是否一致
