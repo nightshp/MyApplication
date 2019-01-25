@@ -23,16 +23,6 @@ public class LitePalUtil {
     public static void createDataBase(){
         Connector.getDatabase();
     }
-    /**
-     * 添加数据
-     */
-    public static void addData(){
-        User user = new User();
-        user.setuId(1);
-        user.setUserName("zhansan");
-        user.setPassWord("1234");
-        user.save();
-    }
 
     /**
      * 注册用户

@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.lunzn.myapp.MainActivity;
 import com.lunzn.myapp.R;
 import com.lunzn.myapp.bean.User;
 import com.lunzn.myapp.util.LitePalUtil;
@@ -43,8 +42,6 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.login_myapp_layout);
         // 创建数据库
         LitePalUtil.createDataBase();
-        // 新增数据
-        LitePalUtil.addData();
 
         initView();
     }
@@ -109,7 +106,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         Log.i(TAG,"login user: "+users);
         if (users != null && users.size()>0){
             Toast.makeText(this,"登录成功",Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(this,MainActivity.class);
+            Intent intent = new Intent(this,MyFragmentActivity.class);
             startActivity(intent);
         }else {
             Toast.makeText(this,"登录失败",Toast.LENGTH_LONG).show();
